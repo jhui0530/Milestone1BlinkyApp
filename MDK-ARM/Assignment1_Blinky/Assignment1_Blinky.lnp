@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"assignment1_blinky\startup_stm32f446xx.o"
+"assignment1_blinky\main.o"
+"assignment1_blinky\stm32f4xx_it.o"
+"assignment1_blinky\stm32f4xx_hal_msp.o"
+"assignment1_blinky\stm32f4xx_hal_tim.o"
+"assignment1_blinky\stm32f4xx_hal_tim_ex.o"
+"assignment1_blinky\stm32f4xx_hal_uart.o"
+"assignment1_blinky\stm32f4xx_hal_rcc.o"
+"assignment1_blinky\stm32f4xx_hal_rcc_ex.o"
+"assignment1_blinky\stm32f4xx_hal_flash.o"
+"assignment1_blinky\stm32f4xx_hal_flash_ex.o"
+"assignment1_blinky\stm32f4xx_hal_flash_ramfunc.o"
+"assignment1_blinky\stm32f4xx_hal_gpio.o"
+"assignment1_blinky\stm32f4xx_hal_dma_ex.o"
+"assignment1_blinky\stm32f4xx_hal_dma.o"
+"assignment1_blinky\stm32f4xx_hal_pwr.o"
+"assignment1_blinky\stm32f4xx_hal_pwr_ex.o"
+"assignment1_blinky\stm32f4xx_hal_cortex.o"
+"assignment1_blinky\stm32f4xx_hal.o"
+"assignment1_blinky\stm32f4xx_hal_exti.o"
+"assignment1_blinky\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "Assignment1_Blinky\Assignment1_Blinky.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Assignment1_Blinky.map" -o Assignment1_Blinky\Assignment1_Blinky.axf
